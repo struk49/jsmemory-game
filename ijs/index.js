@@ -71,8 +71,7 @@ const generateGame = () => {
 
 const startGame = () => {
     state.gameStarted = true
-    selectors.start.classList.add('disabled')
-
+    selectors.start.classList.add('disabled');
     state.loop = setInterval(() => {
         state.totalTime++
 
@@ -124,6 +123,7 @@ const flipCard = card => {
                     with <span class="highlight">${state.totalFlips}</span> moves<br />
                     under <span class="highlight">${state.totalTime}</span> seconds
                 </span>
+                play again
             `
 
             clearInterval(state.loop)
